@@ -43,6 +43,15 @@ Conventional Commits
 
 "type:" feat, fix
 
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  staged    -- "???"     --> tracked/comitted;
+
+%% стрелка без текста для примера: 
+  A --> B;
+``` 
+
 feat: добавить подсчет суммы заказов за неделю
 
 Исправить #334, добавить график температуры
